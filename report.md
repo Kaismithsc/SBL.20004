@@ -170,6 +170,7 @@ Four olidopeptide-related features formed a distinct molecular cluster presented
 - Feature 1797_492.28_3.9 was classified by CANOPUS as a cyclic peptide with a confidence score of 0.87.
 - Feature 1796_983.56_3.9 was annotated as Suzukacillin B through comparison with the GNPS database. This antibacterial This peptaibol, originally isolated from fungal species of the genus Trichoderma (Ooka and Takeda, 1972), has not been reported in bacteria, which suggest a false positive match. Interestingly, its *m/z* value is twice that of feature 1797_492.28_3.9 suggesting that one feature may correspond to a dimeric ion, a different ionization state, or a related molecular species.
 - Feature 1793_492.78_3.9 could not be annotated using any of the databases consulted.
+
 These three features emerged as some of the most significant differential metabolites in our statistical analysis. As illustrated by their abundance distributions (Figure 12), these oligopeptide-related compounds remain highly expressed in wild-type R47 as well as the *phzC* and *pvdE* mutants but were not detected in the 1F12 mutant.
 
 <p align="center">
