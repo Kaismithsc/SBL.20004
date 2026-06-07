@@ -106,4 +106,18 @@ The PCA generated from the metabolomic data (Figure 6) revealed a clear separati
 
 Based on these results, we mainly focused our subsequent analyses on comparisons between strain 1F12 and the parental strain wild-type R47 rather than performing separate comparisons between 1F12 and each of the other mutants, since the PCA suggested that the metabolomic profiles of the *phzC* and *pvdE* mutants were highly similar to that of wild-type R47. In addition, we investigated the more subtle differences between wild-type R47 and its *phzC* and *pvdE* mutants. These comparisons were performed first because they involved fewer differences and were therefore easier to interpret. Furthermore, we expected that at least some of the metabolic differences observed between wild-type R47 and these mutants would also be reflected in the comparison between wild-type R47 and 1F12. 
 
-### The Principal Difference Between the Wild-type R47 and the phzC Mutant Exometabolomes is Phenazine 
+### The Principal Difference Between the Wild-type R47 and the *phzC* Mutant Exometabolomes is Phenazine Content
+#### *Features enriched in the wild-type R47*
+We first investigated four compounds that were significantly more abundant in the wild-type *P. chlororaphis* wild-type R47 strain than in the *phzC* mutant (highlighted in red in Figure 7).
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a08c8fb5-8937-4cee-a561-346ad0ac68dd" alt="Volcano plot showing significantly differentially abundant features between wild-type R47 and phzC, following data scaling, with CANOPUS class annotations. The four phenazine-related compounds significantly enriched in the wild-type are highlighted in red. "/>
+</p>
+<p align="center">Figure 7: Volcano plot showing significantly differentially abundant features between wild-type R47 and phzC, following data scaling, with CANOPUS class annotations. The four phenazine-related compounds significantly enriched in the wild-type are highlighted in red.  
+
+One of these compounds was identified as phenazine-1-carboxylic acid and is the only differentially abundant compound between the tested strains with a match in the ChEBI database. It is also known to be the major phenazine produced by *Pseudomonas chlororaphis* wild-type R47 (Anand et al., 2023). A second compound clustered with it in the molecular network (Figure 8), differing by an *m/z* value of 18.01; this corresponds to the addition of a water molecule. These compounds were connected to two additional features that were present at similar abundances in all strains. Although these latter compounds could not be confidently identified, their predicted structures suggested the presence of a carboxylic acid functional group.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/46650bce-0acf-4ee6-bef6-513bb18e04e6" alt="Molecular network cluster containing phenazine-1-carboxylic acid (node highlighted in yellow, left) and its corresponding chemical structure (right), as visualized in Cytoscape using the ChemViz2 plugin. The central node corresponds to the feature at m/z 225.0558.  "/>
+</p>
+<p align="center">Figure 8: Molecular network cluster containing phenazine-1-carboxylic acid (node highlighted in yellow, left) and its corresponding chemical structure (right), as visualized in Cytoscape using the ChemViz2 plugin. The central node corresponds to the feature at m/z 225.0558. 
