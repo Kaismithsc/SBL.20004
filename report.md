@@ -92,8 +92,8 @@ Targeted extraction of the ion corresponding to phenazine-1-carboxylic acid (C�
 </p>
 <p align="center">Figure 5: Extracted Ion Chromatogram (XIC) of the ion at <i>m/z</i> 225.0558, corresponding to the [M+H]⁺ adduct of phenazine-1-carboxylic acid (C₁₃H₈N₂O₂), showing a dominant peak at approximately 4.65 min exclusively in wild-type R47 replicates, with near-baseline signal across all other strains, the LB medium control, and the solvent blank. 
 
-### Comparison between wild-type R47 and its different mutants
-#### *Metabolites detected in the culture medium*
+### Comparison Between Wild-type R47 and Its Different Mutants
+#### *Metabolites Detected in the Culture Medium*
 Prior to statistical analysis, features were filtered to retain only those exceeding a 10-fold abundance threshold relative to the LB medium blank, ensuring that subsequent comparisons reflect compounds of bacterial origin rather than medium- or solvent-derived background signals. Abundance variations of metabolites already present in the medium may reflect differential uptake or consumption rather than bacterial production. These data may be investigated in future analyses to determine whether the different strains exhibit distinct nutrient use. 
 
 #### *General Comparison*
@@ -107,7 +107,7 @@ The PCA generated from the metabolomic data (Figure 6) revealed a clear separati
 Based on these results, we mainly focused our subsequent analyses on comparisons between strain 1F12 and the parental strain wild-type R47 rather than performing separate comparisons between 1F12 and each of the other mutants, since the PCA suggested that the metabolomic profiles of the *phzC* and *pvdE* mutants were highly similar to that of wild-type R47. In addition, we investigated the more subtle differences between wild-type R47 and its *phzC* and *pvdE* mutants. These comparisons were performed first because they involved fewer differences and were therefore easier to interpret. Furthermore, we expected that at least some of the metabolic differences observed between wild-type R47 and these mutants would also be reflected in the comparison between wild-type R47 and 1F12. 
 
 ### The Principal Difference Between the Wild-type R47 and the *phzC* Mutant Exometabolomes is Phenazine Content
-#### *Features enriched in the wild-type R47*
+#### *Features Enriched in the Wild-type R47*
 We first investigated four compounds that were significantly more abundant in the wild-type *P. chlororaphis* wild-type R47 strain than in the *phzC* mutant (highlighted in red in Figure 7).
 
 <p align="center">
@@ -120,4 +120,54 @@ One of these compounds was identified as phenazine-1-carboxylic acid and is the 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/46650bce-0acf-4ee6-bef6-513bb18e04e6" alt="Molecular network cluster containing phenazine-1-carboxylic acid (node highlighted in yellow, left) and its corresponding chemical structure (right), as visualized in Cytoscape using the ChemViz2 plugin. The central node corresponds to the feature at m/z 225.0558.  "/>
 </p>
-<p align="center">Figure 8: Molecular network cluster containing phenazine-1-carboxylic acid (node highlighted in yellow, left) and its corresponding chemical structure (right), as visualized in Cytoscape using the ChemViz2 plugin. The central node corresponds to the feature at m/z 225.0558. 
+<p align="center">Figure 8: Molecular network cluster containing phenazine-1-carboxylic acid (node highlighted in yellow, left) and its corresponding chemical structure (right), as visualized in Cytoscape using the ChemViz2 plugin. The central node corresponds to the feature at <i>m/z</i> 225.0558. 
+
+The third compound was classified as an amino acid derivative by CANOPUS during the volcano plot analysis (Figure 7). However, both the proposed class and structure were assigned with low confidence scores (0.73 and 0.023, respectively). Because this feature exhibited the same retention time as phenazine-1-carboxylic acid and its *m/z* differed by a value consistent with the addition of H₃O+, we hypothesize that it may correspond to the same metabolite detected as a different ion species or adduct. 
+
+Similarly, the fourth compound was classified by CANOPUS as a phenazine alkaloid with a high confidence score (0.96). Although SIRIUS proposed a structural annotation with only moderate confidence (0.52), the combination of its putative chemical class from CANOPUS, its *m/z* value, and the known phenazine profile of wild-type R47 strongly suggested that this feature corresponds to 1-hydroxyphenazine. This metabolite is a known phenazine produced by wild-type R47, although typically at lower levels than phenazine-1-carboxylic acid (Anand et al., 2023). 
+
+The observed color change between the orange wild-type R47 and the beige *phzC* mutant when grown on LB plates (unpublished personal data) also supports the conclusion that both the yellow phenazine-1-carboxylic acid and the reddish 1-hydroxyphenazine are less abundant in the mutant.
+
+#### *Features Enriched in the phzC Mutant*
+Simple indole alkaloids (recognized as such by CANOPUS), colored in light blue in Figure 7, were more abundant in the *phzC* mutant culture medium than in wild-type R47. The two corresponding features belonged to the same molecular network cluster, suggesting a close structural relationship. 
+
+The first feature, 1189_239.06_2.8, was annotated either as (E)-3-(4-chloro-1H-indol-3-yl)prop-2-enoic acid by SIRIUS (65% confidence) or as (2S)-2-amino-3-[(3R)-4-chloro-3H-indol-3-yl]propanoic acid by ISDB. This feature was detected at higher levels in the *phzC* mutant than in wild-type R47 (175%). Interestingly, it was not detected in the 1F12 mutant, despite this strain also being deficient in phenazine production. The second feature, 1190_222.03_2.8, was tentatively annotated as 3-(5-chloro-1H-indol-2-yl)-2-hydroxypropanoic acid by SIRIUS, although the confidence score was low (28%). The biological significance of the increased abundance of these indole alkaloids specifically in the *phzC* but not in the 1F12 mutant remains unclear. It suggests that their presence in the medium may not be solely linked to the absence of phenazine and could instead reflect a more specific metabolic consequence of the *phzC* mutation. 
+
+### *pvdE* Mutant Exometabolome Differs Little from Wild-type R47 with Only Few Features Enriched
+Only a small number of metabolites differed significantly between wild-type R47 and the *pvdE* mutant, confirming the overall similarity of their metabolomic profiles, as visually demonstrated by the scarcity of differential features in the volcano plot (Figure 9).
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5a7c0684-520a-4bf9-a95d-ccffb832b3d3" alt="Volcano plot showing significantly differentially abundant features between wild-type R47 and pvdE, following data scaling. The plot visually confirms the small number of significantly altered metabolites, reflecting the overall metabolic similarity between the two strains. "/>
+</p>
+<p align="center">Figure 9: Volcano plot showing significantly differentially abundant features between wild-type R47 and <i>pvdE</i>, following data scaling. The plot visually confirms the small number of significantly altered metabolites, reflecting the overall metabolic similarity between the two strains. 
+
+#### *Features Enriched in the pvdE Mutant*
+Five compounds were detected at a significantly higher abundance in the *pvdE* mutant than in wild-type R47. Three of these compounds eluted late on the reverse-phase column (retention times of 7–7.5 min), suggesting they are apolar in nature. CANOPUS classified one of these features as a fatty acyl and another as an unsaturated fatty acid, both with high confidence scores (0.97). However, attempts to identify these compounds using different databases were inconclusive as the proposed annotations differed depending on the database consulted, and one feature did not produce any match.
+Two of these features, 2030_280.26_7 and 2052_296.26_7.5, were also more abundant in the 1F12 mutants than in the wild-type R47.
+
+The remaining two compounds enriched in the *pvdE* mutant were classified as peptides. Their database matches yielded very low confidence scores, preventing reliable identification. One of them, feature 603_568.22_1.7, was also detected at lower levels in the 1F12 mutant compared with wild-type R47.
+
+#### *Features Enriched in the Wild-type R47*
+Only one compound was found at a significantly lower abundance in the *pvdE* mutant than in wild-type R47. SIRIUS tentatively annotated this feature as the peptide H-DL-xiThr-DL-Pro-DL-xiIle-DL-Leu-OH, although the confidence score was low (36%). As no high-confidence annotation could be obtained, the identity and biological significance of this metabolite remain uncertain.
+
+### The 1F12 Mutant Shows Broad Loss of Secondary Metabolite Production Compared to Wild-type R47
+Consistent with the PCA analysis, which showed a clear separation between 1F12 and the other strains, the comparison between wild-type R47 and the 1F12 mutant revealed substantially more differences than the wild-type R47 comparisons with the *phzC* and *pvdE* mutants — as might be expected for a mutant in a master regulator affecting a broad range of metabolic pathways (Biessy & Filion, 2018; D. Wang et al., 2013).
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/08868bdc-50d6-4c13-b499-56d721c053dc" alt="Volcano plot showing significantly differentially abundant features between wild-type R47 and 1F12, following data scaling. In the features that are the more present in the wild-type R47, the features in the same color are part of the same molecular cluster. "/>
+</p>
+<p align="center">Figure 10: Volcano plot showing significantly differentially abundant features between wild-type R47 and 1F12, following data scaling. In the features that are the more present in the wild-type R47, the features in the same color are part of the same molecular cluster. 
+
+#### *Features Enrcihed in the Wild-type R47*
+Metabolites specifically produced by wild-type R47 and absent or present at reduced levels in the 1F12 mutant were prioritized, with particular attention given to compounds displaying the largest abundance differences and grouping within molecular network clusters.
+
+#### *Phenazines*
+The four compounds previously identified as phenazine derivatives and already found to be less abundant in the *phzC* mutant were also among the most discriminant metabolites between wild-type R47 and 1F12. They are displayed in orange in Figure 10. None of these compounds were detected in the 1F12 culture medium, consistent with the observed change in color when grown on LB plates indicating a loss of phenazine production in this mutant.
+
+#### *Clustered Peptides*
+Four olidopeptide-related features formed a distinct molecular cluster presented in (Figure 11) and were completely absent from the 1F12 metabolome. They are displayed in pink in Figure 10. Three of these features shared a similar retention time of approximately 3.9 min and:
+
+- Feature 1797_492.28_3.9 was classified by CANOPUS as a cyclic peptide with a confidence score of 0.87.
+- Feature 1796_983.56_3.9 was annotated as Suzukacillin B through comparison with the GNPS database. This antibacterial This peptaibol, originally isolated from fungal species of the genus Trichoderma (Ooka and Takeda, 1972), has not been reported in bacteria, which suggest a false positive match. Interestingly, its *m/z* value is twice that of feature 1797_492.28_3.9 suggesting that one feature may correspond to a dimeric ion, a different ionization state, or a related molecular species.
+- Feature 1793_492.78_3.9 could not be annotated using any of the databases consulted.
+These three features emerged as some of the most significant differential metabolites in our statistical analysis. As illustrated by their abundance distributions (Figure 12), these oligopeptide-related compounds remain highly expressed in wild-type R47 as well as the *phzC* and *pvdE* mutants but were not detected in the 1F12 mutant.
