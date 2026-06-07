@@ -62,3 +62,27 @@ Multivariate analyses included Principal Component Analysis (PCA) and Principal 
 Pairwise differential analysis between all strain combinations was performed using Honest Significant Difference with Error Model (HSDEM), without multiple testing correction, at a significance threshold of p < 0.05. Fold-changes were calculated as the ratio of group means and expressed as log2-transformed values for visualization. Results were displayed as volcano plots annotated with chemical class information derived from CANOPUS (NP Classifier pathway, superclass, and class) and SIRIUS/CSI:FingerID (ChEBI compound names). Boxplots were generated for the 16 features displaying the greatest differential abundance. A p-value heatmap was additionally produced to provide an overview of inter-group differences across the full feature set. 
 
 All statistical outputs were subsequently mapped onto the molecular network in Cytoscape to integrate chemical annotation with differential abundance data. The GNPS2 molecular networking task ID is: 4392c1c13e394c7a8a720f3e3d10883d. All analyses were performed in R version 4.2.2 (2022-10-31), using the MAPPstructToolbox package (v1.9.1), structToolbox (v1.19.2), struct (v1.10.0), pmp (v1.10.0), pls (v2.8-3), rfPermute (v2.5.2), vegan (v2.7-3), ggplot2 (v3.5.2), and plotly (v4.10.4) (R Core Team, 2022). 
+
+## Results and Discussion
+Preliminary inspection of Total Ion Chromatograms (TICs) confirmed low background signal in the solvent blank (Figure 2), validating the cleanliness of the analytical system. The LB medium control displayed numerous peaks in the early retention time window (Figure 2), consistent with the presence of polar medium-derived compounds.  
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2013e39e-83ea-491c-856e-05226b689391" alt="Total Ion Chromatogram (TIC) overlay of the LB medium control (orange) and solvent blank (dark blue), showing the high signal intensity and complexity of the culture medium across the 0–5 min retention time window, and the near-baseline signal of the blank, confirming minimal background contamination of the analytical system."/>
+</p>
+<p align="center">Figure 2: Total Ion Chromatogram (TIC) overlay of the LB medium control (orange) and solvent blank (dark blue), showing the high signal intensity and complexity of the culture medium across the 0–5 min retention time window, and the near-baseline signal of the blank, confirming minimal background contamination of the analytical system. 
+
+QC chromatograms showed strong overlap across injections (Figure 3), confirming instrument stability throughout the run.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/40f538d3-7a5f-43a6-b02b-3bd74e4af713" alt="TIC overlay of the six pooled Quality Control (QC) injections, showing strong chromatographic reproducibility across the analytical sequence, with consistent peak shapes and intensities, confirming stable instrument performance throughout the run."/>
+</p>
+<p align="center">Figure 3: TIC overlay of the six pooled Quality Control (QC) injections, showing strong chromatographic reproducibility across the analytical sequence, with consistent peak shapes and intensities, confirming stable instrument performance throughout the run. 
+
+Overlay of all biological samples (Figure 4) revealed that a substantial proportion of detected features are shared across groups, with many attributable to the LB medium.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8c9537ac-7cf0-4761-8d3b-689da9500009" alt="TIC overlay of all samples, including biological replicates of all four strains, QC samples, LB medium control, and solvent blank, showing the overall complexity of the dataset and the predominance of medium-derived signals across groups, with the LB medium control (orange) largely overlapping with the biological samples in the early retention time window. "/>
+</p>
+<p align="center">Figure 4: TIC overlay of all samples, including biological replicates of all four strains, QC samples, LB medium control, and solvent blank, showing the overall complexity of the dataset and the predominance of medium-derived signals across groups, with the LB medium control (orange) largely overlapping with the biological samples in the early retention time window. 
+
+Targeted extraction of the ion corresponding to phenazine-1-carboxylic acid (C₁₃H₈N₂O₂) (Figure 5) revealed a peak consistently present in wild-type R47 and reduced or absent in the *phzC* mutant, consistent with the expected loss of phenazine biosynthesis.
