@@ -52,7 +52,7 @@ Structure annotation was performed using CSI:FingerID, which predicts molecular 
 Chemical class prediction was performed using CANOPUS, which assigns ClassyFire and NP Classifier ontology classes based on the predicted molecular fingerprint, independently of any database match (Dührkop et al., 2021). Spectral library matching was additionally performed within the SIRIUS environment against all biological databases available on the platform. 
 
 #### *Molceular Network Visualization and Annotation (Cytoscape)*
-The Feature-Based Molecular Network generated on GNPS2 was imported into Cytoscape 3.10.4 for visualization and annotation (Shannon et al., 2003). The network was imported in GraphML format and includes both clustered features and singletons. Annotations from multiple sources: GNPS spectral library matching, ISDB in silico spectral matching (with taxonomic consistency scoring), and SIRIUS/CSI:FingerID/CANOPUS were consolidated using the met_annot_enhancer workflow and mapped onto network nodes as attributes (Allard et al., 2016; Rutz et al., 2019). Node attributes include putative compound names, SMILES structures, NP Classifier pathway/superclass/class assignments, ClassyFire ontology levels, and per-sample group feature intensities for all five experimental groups (wild-type R47, *pvdE*, *phzC*, 1F12, and LB medium control). Molecular structures of annotated features of interest were visualized directly on the network using the ChemViz2 plugin.
+The Feature-Based Molecular Network generated on GNPS2 was imported into Cytoscape 3.10.4 for visualization and annotation (Shannon et al., 2003). The network was imported in GraphML format and includes both clustered features and singletons. Annotations from multiple sources: GNPS spectral library matching, ISDB *in silico* spectral matching (with taxonomic consistency scoring), and SIRIUS/CSI:FingerID/CANOPUS were consolidated using the met_annot_enhancer workflow and mapped onto network nodes as attributes (Allard et al., 2016; Rutz et al., 2019). Node attributes include putative compound names, SMILES structures, NP Classifier pathway/superclass/class assignments, ClassyFire ontology levels, and per-sample group feature intensities for all five experimental groups (wild-type R47, *pvdE*, *phzC*, 1F12, and LB medium control). Molecular structures of annotated features of interest were visualized directly on the network using the ChemViz2 plugin.
 
 #### *Statistical Analysis and Data Visualization*
 Statistical analysis and visualization were performed using the MAPP (Metabolomics Analysis and Plotting Pipeline) R-based workflow, implemented via the MAPPstructToolbox package. Prior to analysis, features were filtered to remove those present in the LB medium blank at a fold-change below 10, retaining only features detected in fewer than 100% of blank replicates. QC and blank samples were then excluded, retaining only biological samples for downstream analysis. The feature intensity matrix was normalized using Pareto scaling, followed by vector normalization and mean centering prior to ordination analyses. The statistical analysis was performed on the non-gap-filled feature table. 
@@ -147,7 +147,7 @@ Two of these features, 2030_280.26_7 and 2052_296.26_7.5, were also more abundan
 
 The remaining two compounds enriched in the *pvdE* mutant were classified as peptides. Their database matches yielded very low confidence scores, preventing reliable identification. One of them, feature 603_568.22_1.7, was also detected at lower levels in the 1F12 mutant compared with wild-type R47.
 
-#### *Features Enriched in the Wild-type R47*
+#### *A Single Putative Peptide is Enriched in Wild-type R47*
 Only one compound was found at a significantly lower abundance in the *pvdE* mutant than in wild-type R47. SIRIUS tentatively annotated this feature as the peptide H-DL-xiThr-DL-Pro-DL-xiIle-DL-Leu-OH, although the confidence score was low (36%). As no high-confidence annotation could be obtained, the identity and biological significance of this metabolite remain uncertain.
 
 ### The 1F12 Mutant Shows Broad Loss of Secondary Metabolite Production Compared to Wild-type R47
@@ -158,7 +158,7 @@ Consistent with the PCA analysis, which showed a clear separation between 1F12 a
 </p>
 <p align="center">Figure 10: Volcano plot showing significantly differentially abundant features between wild-type R47 and 1F12, following data scaling. In the features that are the more present in the wild-type R47, the features in the same color are part of the same molecular cluster. 
 
-#### *Features Enrcihed in the Wild-type R47*
+#### *Phenazines and Oligopeptide Clusters Are the Primary Features Lost in the 1F12 Mutant*
 Metabolites specifically produced by wild-type R47 and absent or present at reduced levels in the 1F12 mutant were prioritized, with particular attention given to compounds displaying the largest abundance differences and grouping within molecular network clusters.
 
 #### *Phenazines*
@@ -171,3 +171,26 @@ Four olidopeptide-related features formed a distinct molecular cluster presented
 - Feature 1796_983.56_3.9 was annotated as Suzukacillin B through comparison with the GNPS database. This antibacterial This peptaibol, originally isolated from fungal species of the genus Trichoderma (Ooka and Takeda, 1972), has not been reported in bacteria, which suggest a false positive match. Interestingly, its *m/z* value is twice that of feature 1797_492.28_3.9 suggesting that one feature may correspond to a dimeric ion, a different ionization state, or a related molecular species.
 - Feature 1793_492.78_3.9 could not be annotated using any of the databases consulted.
 These three features emerged as some of the most significant differential metabolites in our statistical analysis. As illustrated by their abundance distributions (Figure 12), these oligopeptide-related compounds remain highly expressed in wild-type R47 as well as the *phzC* and *pvdE* mutants but were not detected in the 1F12 mutant.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/505eec65-333d-43cb-9dd6-7dae9204f93f" alt="Molecular cluster containing the features 1797_492.28_3.9, 1796_983.56_3.9, and 1793_492.78_3.9. These features were enriched in wild-type R47 but completely absent from the 1F12 mutant metabolome."/>
+</p>
+<p align="center">Figure 11: Molecular cluster containing the features 1797_492.28_3.9, 1796_983.56_3.9, and 1793_492.78_3.9. These features were enriched in wild-type R47 but completely absent from the 1F12 mutant metabolome. 
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/df51399e-590a-4669-945f-7c85f9543281" alt="Box plots showing the abundance distribution of features 1796_983.56_3.9, 1797_492.28_3.9, and 1793_492.78_3.9 across the different experimental groups (1F12, phzC, pvdE and wild-type R47). The plots visually confirm that these oligopeptide-related compounds are completely absent in the 1F12 mutant, while remaining highly abundant in the wild-type R47 and other mutant strains. "/>
+</p>
+<p align="center">Figure 12: Box plots showing the abundance distribution of features 1796_983.56_3.9, 1797_492.28_3.9, and 1793_492.78_3.9 across the different experimental groups (1F12, <i>phzC</i>, <i>pvdE</i> and wild-type R47). The plots visually confirm that these oligopeptide-related compounds are completely absent in the 1F12 mutant, while remaining highly abundant in the wild-type R47 and other mutant strains. 
+
+Feature 1297_836.49_3 was annotated by SIRIUS as the peptide 3QFD (H-Ala-Ala-Gly-Ile-Gly-Ile-Leu-Thr-Val-OH) with a confidence score of 0.823. This peptide corresponds to a complex involving the human MHC class I protein HLA-A2 and the MART-1(27–35) peptide. Despite the high confidence score, this annotation is biologically implausible in the context of a bacterial culture and should therefore be considered an artifact of database matching rather than a true identification. Contamination with a human peptide was also considered; however, a random contamination event would not perfectly segregate by bacterial genotype. Because this feature is consistently detected across all biological replicates of wild-type R47 and the phzC and pvdE mutants, perfectly co-occurs with the other bacterial peptides in its molecular network cluster, and is completely absent from all four 1F12 replicates and the LB medium control, it is highly likely a true bacterial metabolite that shares spectral similarity with the human peptide, leading to a false-positive database match.
+
+#### *Second Cluster*
+Features 1349_390.73_3.1 and 1348_780.46_3.1, shown in red in Figure 10, are also present in 1F12 and cluster together (Figure 13). Although neither compound could be confidently identified, their molecular masses suggest that one feature may correspond to a dimeric form of the other. 
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d4a75a47-f5e0-4325-ad8f-f50e5b87347b" alt="Molecular cluster containing the features 1349_390.73_3.1 and 1348_780.46_3.1(circled in red). These features were detected in both wild-type R47 and the1F12 mutant, with their molecular masses suggesting a potential monomer-dimer relationship. "/>
+</p>
+<p align="center">Figure 13: Molecular cluster containing the features 1349_390.73_3.1 and 1348_780.46_3.1(circled in red). These features were detected in both wild-type R47 and the1F12 mutant, with their molecular masses suggesting a potential monomer-dimer relationship. 
+
+#### *Cyclic Peptides and Depsipeptides*
+Three additional oligopeptides belonging to the same molecular cluster (see Figure 14) were detected at much lower abundance in 1F12 than in wild-type R47. Feature 1308_540.34_3 was tentatively annotated as Syringolin D based on *in silico* spectral database (ISDB) comparison. It is a cyclic peptide originally described in Pseudomonas syringae pv. syringae, where it acts as a virulence factor (Wäspi et al. 1999). Feature 1329_654.38_3 was tentatively annotated by SIRIUS as desmethylisaridin G, a cyclohexadepsipeptide belonging to the isaridin family. This annotation should be interpreted cautiously because the confidence score was only approximately 42%. Desmethylisaridin G was isolated from entomopathogenic fungi of the genus Isaria and has been reported to possess antibacterial activity (Du et al., 2014). As it is not known in bacteria, the match is probably a false positive. 
