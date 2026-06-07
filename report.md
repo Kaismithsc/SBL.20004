@@ -100,7 +100,7 @@ Prior to statistical analysis, features were filtered to retain only those excee
 The PCA generated from the metabolomic data (Figure 6) revealed a clear separation between strain 1F12 and the other strains. Principal Component 1 (PC1), which explained 75.7% of the observed variability, clustered the *phzC*, *pvdE*, and wild-type R47 strains together, whereas 1F12 formed a distinct group. Principal Component 2 (PC2), accounting for 7% of the total variance, reflected differences among the 1F12 biological replicates, which displayed a more heterogeneous metabolic profile compared to the other strain strains. 
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/5a99505a-1087-417d-8221-97b03b4a16cd" alt="Principal Component Analysis (PCA) showing the distribution of samples from the 1F12, phzC, pvdE, and wild-type R47 groups after data scaling. The plot demonstrates a clear metabolomic separation of the 1F12 mutant along a Principal Component 1 (75.7% of explained variance), while the wild-type and the phzC and pvdE mutants cluster closely together. "/>
+  <img width="50%" src="https://github.com/user-attachments/assets/5a99505a-1087-417d-8221-97b03b4a16cd" alt="Principal Component Analysis (PCA) showing the distribution of samples from the 1F12, phzC, pvdE, and wild-type R47 groups after data scaling. The plot demonstrates a clear metabolomic separation of the 1F12 mutant along a Principal Component 1 (75.7% of explained variance), while the wild-type and the phzC and pvdE mutants cluster closely together. "/>
 </p>
 <p align="center"><b>Figure 6</b>: Principal Component Analysis (PCA) showing the distribution of samples from the 1F12, <i>phzC</i>, <i>pvdE</i>, and wild-type R47 groups after data scaling. The plot demonstrates a clear metabolomic separation of the 1F12 mutant along a Principal Component 1 (75.7% of explained variance), while the wild-type and the <i>phzC</i> and <i>pvdE</i> mutants cluster closely together. 
 
@@ -111,7 +111,7 @@ Based on these results, we mainly focused our subsequent analyses on comparisons
 We first investigated four compounds that were significantly more abundant in the wild-type *P. chlororaphis* wild-type R47 strain than in the *phzC* mutant (highlighted in red in Figure 7).
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a08c8fb5-8937-4cee-a561-346ad0ac68dd" alt="Volcano plot showing significantly differentially abundant features between wild-type R47 and phzC, following data scaling, with CANOPUS class annotations. The four phenazine-related compounds significantly enriched in the wild-type are highlighted in red. "/>
+  <img width="50%" src="https://github.com/user-attachments/assets/a08c8fb5-8937-4cee-a561-346ad0ac68dd" alt="Volcano plot showing significantly differentially abundant features between wild-type R47 and phzC, following data scaling, with CANOPUS class annotations. The four phenazine-related compounds significantly enriched in the wild-type are highlighted in red. "/>
 </p>
 <p align="center"><b>Figure 7</b>: Volcano plot showing significantly differentially abundant features between wild-type R47 and phzC, following data scaling, with CANOPUS class annotations. The four phenazine-related compounds significantly enriched in the wild-type are highlighted in red.  
 
@@ -137,7 +137,7 @@ The first feature, 1189_239.06_2.8, was annotated either as (E)-3-(4-chloro-1H-i
 Only a small number of metabolites differed significantly between wild-type R47 and the *pvdE* mutant, confirming the overall similarity of their metabolomic profiles, as visually demonstrated by the scarcity of differential features in the volcano plot (Figure 9).
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/5a7c0684-520a-4bf9-a95d-ccffb832b3d3" alt="Volcano plot showing significantly differentially abundant features between wild-type R47 and pvdE, following data scaling. The plot visually confirms the small number of significantly altered metabolites, reflecting the overall metabolic similarity between the two strains. "/>
+  <img width="50%" src="https://github.com/user-attachments/assets/5a7c0684-520a-4bf9-a95d-ccffb832b3d3" alt="Volcano plot showing significantly differentially abundant features between wild-type R47 and pvdE, following data scaling. The plot visually confirms the small number of significantly altered metabolites, reflecting the overall metabolic similarity between the two strains. "/>
 </p>
 <p align="center"><b>Figure 9</b>: Volcano plot showing significantly differentially abundant features between wild-type R47 and <i>pvdE</i>, following data scaling. The plot visually confirms the small number of significantly altered metabolites, reflecting the overall metabolic similarity between the two strains. 
 
@@ -154,7 +154,7 @@ Only one compound was found at a significantly lower abundance in the *pvdE* mut
 Consistent with the PCA analysis, which showed a clear separation between 1F12 and the other strains, the comparison between wild-type R47 and the 1F12 mutant revealed substantially more differences than the wild-type R47 comparisons with the *phzC* and *pvdE* mutants — as might be expected for a mutant in a master regulator affecting a broad range of metabolic pathways (Biessy & Filion, 2018; D. Wang et al., 2013).
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/08868bdc-50d6-4c13-b499-56d721c053dc" alt="Volcano plot showing significantly differentially abundant features between wild-type R47 and 1F12, following data scaling. In the features that are the more present in the wild-type R47, the features in the same color are part of the same molecular cluster. "/>
+  <img width="50%" src="https://github.com/user-attachments/assets/08868bdc-50d6-4c13-b499-56d721c053dc" alt="Volcano plot showing significantly differentially abundant features between wild-type R47 and 1F12, following data scaling. In the features that are the more present in the wild-type R47, the features in the same color are part of the same molecular cluster. "/>
 </p>
 <p align="center"><b>Figure 10</b>: Volcano plot showing significantly differentially abundant features between wild-type R47 and 1F12, following data scaling. In the features that are the more present in the wild-type R47, the features in the same color are part of the same molecular cluster. 
 
@@ -174,7 +174,7 @@ Four olidopeptide-related features formed a distinct molecular cluster presented
 These three features emerged as some of the most significant differential metabolites in our statistical analysis. As illustrated by their abundance distributions (Figure 12), these oligopeptide-related compounds remain highly expressed in wild-type R47 as well as the *phzC* and *pvdE* mutants but were not detected in the 1F12 mutant.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/505eec65-333d-43cb-9dd6-7dae9204f93f" alt="Molecular cluster containing the features 1797_492.28_3.9, 1796_983.56_3.9, and 1793_492.78_3.9. These features were enriched in wild-type R47 but completely absent from the 1F12 mutant metabolome."/>
+  <img height="25%" width="25%" src="https://github.com/user-attachments/assets/505eec65-333d-43cb-9dd6-7dae9204f93f" alt="Molecular cluster containing the features 1797_492.28_3.9, 1796_983.56_3.9, and 1793_492.78_3.9. These features were enriched in wild-type R47 but completely absent from the 1F12 mutant metabolome."/>
 </p>
 <p align="center"><b>Figure 11</b>: Molecular cluster containing the features 1797_492.28_3.9, 1796_983.56_3.9, and 1793_492.78_3.9. These features were enriched in wild-type R47 but completely absent from the 1F12 mutant metabolome. 
 
@@ -189,7 +189,7 @@ Feature 1297_836.49_3 was annotated by SIRIUS as the peptide 3QFD (H-Ala-Ala-Gly
 Features 1349_390.73_3.1 and 1348_780.46_3.1, shown in red in Figure 10, are also present in 1F12 and cluster together (Figure 13). Although neither compound could be confidently identified, their molecular masses suggest that one feature may correspond to a dimeric form of the other. 
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/d4a75a47-f5e0-4325-ad8f-f50e5b87347b" alt="Molecular cluster containing the features 1349_390.73_3.1 and 1348_780.46_3.1(circled in red). These features were detected in both wild-type R47 and the1F12 mutant, with their molecular masses suggesting a potential monomer-dimer relationship. "/>
+  <img height="40%" width="40%" src="https://github.com/user-attachments/assets/d4a75a47-f5e0-4325-ad8f-f50e5b87347b" alt="Molecular cluster containing the features 1349_390.73_3.1 and 1348_780.46_3.1(circled in red). These features were detected in both wild-type R47 and the1F12 mutant, with their molecular masses suggesting a potential monomer-dimer relationship. "/>
 </p>
 <p align="center"><b>Figure 13</b>: Molecular cluster containing the features 1349_390.73_3.1 and 1348_780.46_3.1(circled in red). These features were detected in both wild-type R47 and the1F12 mutant, with their molecular masses suggesting a potential monomer-dimer relationship. 
 
@@ -197,7 +197,7 @@ Features 1349_390.73_3.1 and 1348_780.46_3.1, shown in red in Figure 10, are als
 Three additional oligopeptides belonging to the same molecular cluster (see Figure 14) were detected at much lower abundance in 1F12 than in wild-type R47. Feature 1308_540.34_3 was tentatively annotated as Syringolin D based on *in silico* spectral database (ISDB) comparison. It is a cyclic peptide originally described in Pseudomonas syringae pv. syringae, where it acts as a virulence factor (Wäspi et al. 1999). Feature 1329_654.38_3 was tentatively annotated by SIRIUS as desmethylisaridin G, a cyclohexadepsipeptide belonging to the isaridin family. This annotation should be interpreted cautiously because the confidence score was only approximately 42%. Desmethylisaridin G was isolated from entomopathogenic fungi of the genus Isaria and has been reported to possess antibacterial activity (Du et al., 2014). As it is not known in bacteria, the match is probably a false positive. 
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/1bba81b7-cdb0-4342-933b-2afe6505bea7" alt=" Molecular cluster containing the features 1329_654.38_3 and 1308_540.34_3 (circled in red). These features, tentatively annotated as Desmethylisaridin G and Syringolin D respectively, were detected at a lower abundance in the 1F12 mutant than in wild-type R47. "/>
+  <img height="60%" width="60%" src="https://github.com/user-attachments/assets/1bba81b7-cdb0-4342-933b-2afe6505bea7" alt=" Molecular cluster containing the features 1329_654.38_3 and 1308_540.34_3 (circled in red). These features, tentatively annotated as Desmethylisaridin G and Syringolin D respectively, were detected at a lower abundance in the 1F12 mutant than in wild-type R47. "/>
 </p>
 <p align="center"><b>Figure 14</b>: Molecular cluster containing the features 1329_654.38_3 and 1308_540.34_3 (circled in red). These features, tentatively annotated as Desmethylisaridin G and Syringolin D respectively, were detected at a lower abundance in the 1F12 mutant than in wild-type R47.  
 
