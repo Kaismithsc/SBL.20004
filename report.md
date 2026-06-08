@@ -165,7 +165,7 @@ Metabolites specifically produced by wild-type R47 and absent or present at redu
 The four compounds previously identified as phenazine derivatives and already found to be less abundant in the *phzC* mutant were also among the most discriminant metabolites between wild-type R47 and 1F12. They are displayed in orange in Figure 10. None of these compounds were detected in the 1F12 culture medium, consistent with the observed change in color when grown on LB plates indicating a loss of phenazine production in this mutant.
 
 #### *Clustered Peptides*
-Four olidopeptide-related features formed a distinct molecular cluster presented in (Figure 11) and were completely absent from the 1F12 metabolome. They are displayed in pink in Figure 10. Three of these features shared a similar retention time of approximately 3.9 min and:
+Four oligopeptide-related features formed a distinct molecular cluster presented in (Figure 11) and were completely absent from the 1F12 metabolome. They are displayed in pink in Figure 10. Three of these features shared a similar retention time of approximately 3.9 min and:
 
 - Feature 1797_492.28_3.9 was classified by CANOPUS as a cyclic peptide with a confidence score of 0.87.
 - Feature 1796_983.56_3.9 was annotated as Suzukacillin B through comparison with the GNPS database. This antibacterial This peptaibol, originally isolated from fungal species of the genus Trichoderma (Ooka and Takeda, 1972), has not been reported in bacteria, which suggest a false positive match. Interestingly, its *m/z* value is twice that of feature 1797_492.28_3.9 suggesting that one feature may correspond to a dimeric ion, a different ionization state, or a related molecular species.
